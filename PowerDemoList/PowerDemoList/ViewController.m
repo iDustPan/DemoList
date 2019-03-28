@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "XPRangeSlider.h"
+#import "DemoListViewController.h"
 
 @interface ViewController ()
 
@@ -16,13 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    DemoListViewController *demoVC = [[DemoListViewController alloc] initWithNibName:nil bundle:nil];
+    [self addChildViewController:demoVC];
+    [self.view addSubview:demoVC.view];
+    [demoVC didMoveToParentViewController:self];
+    
 }
 
 
