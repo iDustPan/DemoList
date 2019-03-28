@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) CGFloat fontSize;
 
+@property (nonatomic, assign) CGFloat itemWidth;
+
 
 @end
 
